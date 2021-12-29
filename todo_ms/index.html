@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="todo.css" />
+  </head>
+  <body>
+    <header class="title">
+      <span>TODO LIST</span>
+    </header>
+    <section class="todo_fm">
+      <div class="cont">
+        <form>
+          <input type="text" id="todoFm" placeholder="할일을 입력해주세요!"/><button class="bt_confirm" id="btnConfirm">
+            확인
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="todo_list">
+      <div class="cont">
+        <form>
+          <button class="bt_clear" id="btnClear">
+            전체삭제
+          </button>
+        </form>
+        <div class="tab">
+          <form name="tabBtn" id="tabBtnAct">
+            <ul>
+              <li><a href="?1">all</a></li>
+              <li><a href="?2">today</a></li>
+              <li><a href="?3">done</a></li>
+            </ul>
+          </form>
+        </div>
+        <div class="tab_cnt" id="tabCntAll">
+          <ul id="listBox">
+            <!-- <li>
+              <span class="txt">dhjkjf;lakjd sdadf</span
+              ><a class="bt_check">확인</a><a class="bt_del">삭제</a
+              ><span class="time">11.20.20:32</span>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="main.js"></script>
+</html>
