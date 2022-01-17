@@ -1,0 +1,4 @@
+## file ##
+*.log
+
+node_modules/

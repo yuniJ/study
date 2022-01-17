@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="todo.css" />
+  </head>
+  <body>
+    <header class="title">
+      <span>TODO LIST</span>
+    </header>
+    <section class="todo_fm">
+      <div class="cont">
+        <form action="index.html">
+          <input type="text" id="todoFm" placeholder="할일을 입력해주세요!"/><button class="bt_confirm" id="btnConfirm">
+            확인
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="todo_list">
+      <div class="cont">
+        <form>
+          <button class="bt_clear" id="btnClear">
+            전체삭제
+          </button>
+        </form>
+        <div class="tab">
+          <form name="tabBtn" id="tabBtnAct">
+            <ul>
+              <li><a href="#all">all</a></li>
+              <li><a href="#today">today</a></li>
+              <li><a href="#done">done</a></li>
+            </ul>
+          </form>
+        </div>
+        <div class="tab_cnt" id="tabCntAll">
+          <ul id="listBox">
+            <!-- <li>
+              <span class="txt">dhjkjf;lakjd sdadf</span
+              ><a class="bt_check">확인</a><a class="bt_del">삭제</a
+              ><span class="time">11.20.20:32</span>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script type="module" src="app.js"></script>
+  
+  <!-- <script>
+    let a = {
+      b:{toDoId :1,
+        toDoTxt:2,
+        toDoDate:3,
+        toDoDone:4},
+
+        c:{toDoId :5,
+        toDoTxt:6,
+        toDoDate:7,
+        toDoDone:8}
+
+    }
+
+      const newID = function () {
+        return Math.random().toString(36).substr(2, 16);
+      }
+
+      delete a.c ; //삭제
+      
+    // a[newID()] = {toDoId :9,
+    //   toDoTxt:10,
+    //   toDoDate:11,
+    //   toDoDone:12};
+      
+    let akey=Object.keys(a);
+    
+
+    for(let i=0; i < akey.length; i++ ){
+      console.log(akey[i])
+        for (let index = 0; index < Object.keys(a[akey[i]]).length; index++) {
+           console.log(a[akey[i]][Object.keys(a[akey[i]])[index]])
+          }
+    }
+  </script> -->
+
+  <!-- <script>
+    function a() {
+
+      function b(params) {
+        console.log("b"+params);
+      }
+      function ab(params) {
+        console.log("ab"+params);
+      }
+      return {
+        first : b,
+        first2 : ab,
+        
+
+      };
+    }
+
+    a().first("params");
+    a().first2("params");
+  </script> -->
+</html>
